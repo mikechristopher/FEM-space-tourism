@@ -1,0 +1,92 @@
+:root {
+  --blue-900: #0b0d17;
+  --blue-300: #d0d6f9;
+  --white: #ffffff;
+  --spacing-1600: 128px;
+  --spacing-1200: 96px;
+  --spacing-1000: 80px;
+  --spacing-800: 64px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-500: 4px;
+  --spacing-25: 2px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.home {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 136px;
+  padding-top: 40px;
+}
+.menu {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: var(--spacing-600);
+  padding-left: var(--spacing-800);
+  padding-right: var(--spacing-800);
+}
+.menu a {
+  height: var(--spacing-1200);
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-150);
+}
+.menu a.current,
+.menu a:hover {
+  border-bottom: 2px solid var(--white);
+}
+
+.text-preset-8-bold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+.text-preset-8 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.logo {
+  height: var(--spacing-600);
+  margin-left: var(--spacing-800);
+  width: 100%;
+  display: flex;
+  gap: var(--spacing-800);
+  align-items: center;
+  z-index: 1;
+}
+.line {
+  height: var(--spacing-25);
+  width: 100%;
+  background-color: var(--white);
+  opacity: 0.25;
+  margin-right: -32px;
+}
